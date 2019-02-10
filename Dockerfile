@@ -22,7 +22,6 @@ RUN \
 	openjpeg-dev \
 	openssl-dev \
 	python3-dev \
-	tiff-dev \ 
 	zlib-dev && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
@@ -32,13 +31,10 @@ RUN \
 	lcms2 \
 	libjpeg-turbo \
 	libwebp \
-	openjpeg \
 	openssl \
-	p7zip \
 	py3-lxml \
 	python3 \
 	tar \
-	tiff \
 	unrar \
 	unzip \
 	vnstat \
@@ -61,7 +57,6 @@ RUN \
 	ndg-httpsclient \
 	notify \
 	paramiko \
-	pillow \
 	psutil \
 	pyopenssl \
 	requests \
@@ -91,7 +86,6 @@ WORKDIR /app
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 COPY app /app
-RUN pip3 install --no-cache-dir -e .
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
