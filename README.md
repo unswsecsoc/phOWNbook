@@ -25,3 +25,25 @@ def main_page():
     else:
         return render_template('home.html')
 ```
+## Solution
+Simply seach for `administrator` in mixed case - bypassing the isUpper check
+
+## Flag
+`OWEEK{cASe_IssUeS_AlWaYs_rEmiNd_ME_oF_sPoNGeBoB}`
+
+# phOWNbook-bonus
+A web challenge in trying things - yes this was in the first version published online, I was going to award extra points to anyone who noticed but nobody did.
+
+## Description
+A flag has been *hidden*, split into **thousands of tiny pieces!!**
+
+Can you find ***us*** all?
+
+## Solution
+View source (the ultimate hacker tool) on the administrator search result page to find the first part.
+View source on each of the secsoc team members search results for entertaining flavourtext and the other parts of the flag.
+
+b64 decode and enjoy
+
+## Flag
+OWEEK{Gotta-B-Sn3Aky-Ch@rlie-Sn3Aky}
