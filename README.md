@@ -46,4 +46,4 @@ View source on each of the secsoc team members search results for entertaining f
 b64 decode and enjoy
 
 ## Flag
-OWEEK{Gotta-B-Sn3Aky-Ch@rlie-Sn3Aky}
+`OWEEK{Gotta-B-Sn3Aky-Ch@rlie-Sn3Aky}`
